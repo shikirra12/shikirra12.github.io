@@ -27,13 +27,16 @@
           <!-- menu items -->
             <ul class="list-unstyled components">
               <li class="active">
-                <a href="#">About Me</a>
+                <a href="#home">Home</a>
               </li>
               <li>
-                <a href="#">Skills</a>
+                <a href="#about-me">About Me</a>
               </li>
               <li>
-                <a href="tel:+16783156619">Give Me a Ring</a>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="tel:+16783156619">Call Me</a>
               </li>
               <li>
                 <a href="mailto:shikirra.williams@gmail.com?Subject=Hello">Email Me</a>
@@ -58,7 +61,7 @@
     <div id="content">
     <nav class="navbar navbar-default">
       <!-- makes page responsive -->
-    <div class="container-fluid">
+    <div  id="navigation" class="container-fluid">
 
       <div class="navbar-header">
         <button type="button" id="sidebarCollapse" class="navbar-btn">
@@ -70,45 +73,99 @@
 
       <div class="collapse navbar-collapse">
         <div class="nav navbar-nav navbar-right">
-          <h1>Shikirra Williams</h1>
+          <h1 id="nav-header-right">Shikirra Williams</h1>
         </div>
       </div>
     </div>
     </nav>
 
-      <div class="about-me">
+    <div id="home">
+      <img id="home-pic" src="images/mac_and_coffee.jpg" alt="Lady with macbook and coffee">
 
-        <!-- <div class="typewrite">
-          <h1>
-            <a href="" class="typewrite" data-period="2000" data-type='[ "Desire to Lean", "Desire to Create", "Desire to Inspire", "Desire to Suceed" ]'>
-            <span class="wrap"></span>
-          </a>
-          </h1>
-        </div> -->
+      <h2>
+        <a href="" class="typewrite" data-period="2000" data-type='[ "Desire to Learn", "Desire to Innovate", "Desire to Create", "Desire to Inspire", "Desire to Suceed" ]'>
+          <span class="wrap"></span>
+        </a>
+      </h2>
 
-        <pre>
-          while(alive){
-            eat();
-            sleep();
-            code();
-            repeat();
-          }
-        </pre>
+<!-- need to adjust about-me section to fit diffent medias && made photo transition on hover -->
+    <div id="about-me" class="container-fluid">
+      <div class="row bio-container">
+          <div class="col-xs-5 .col-sm-6 .col-md-4">
+              <div class="bio-about-me">
+                <img src="images/IMG_0158 2.jpg" class="img-circle" width="250" height="250" alt="Shikirra Williams">
 
-        <h2>About Me!</h2>
+                <h2 class="bio">Shikirra Williams</h2>
+                <h3 class="bio">FullStack Developer</h3>
+                <hr>
+              </div>
+            </div>
 
-          <img src="images/IMG_0158 2.jpg" class="img-circle" width="230" height="230" alt="Shikirra Williams">
+            <div class="col-xs-7 .col-sm-6 .col-md-8">
+              <blockquote cite="">
+                <p>
+                  "If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward."
+                </p>
+                <footer>Martin Luther King Jr.</footer>
+              </blockquote>
+                <p> This quote has held true through my life and experiences, and inspires me to strive harder for the things I truly want in life. Learning to code and building projects has given me a new found purpose and hobby! Before my journey to becoming a devoper, I worked in the hospitality industry since I was yound and able to work, holding numerous job titles, never quite feeling fulfilled or challenged. One day, a friend asked me to join them at a MeetUp and changed my life! They captured my soul at "Hello World". I never had so much fun and felt so accomplished in a short amount of time. Shortly after, I enrolled in The Iron Yard, acoding bootcamp and completed the course within 4 months, and <mark>HERE I AM!</mark></p>
 
-            <blockquote cite="">
-              <p>
-                "If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward."
-              </p>
-              <footer>Martin Luther King Jr.</footer>
-            </blockquote>
-              <p> This quote has held true through my life and experiences, and inspires me to strive harder for the things I truly want in life. Learning to code and building projects has given me a new found purpose and hobby! I worked in the hospitality industry since I was yound and able to work, holding numerous job titles, never quite feeling fulfilled or challenged. One day, a friend asked me to join them at a MeetUp and changed my life! I never had so much fun and felt so accomplished in a short amount of time. Shortly after, I enrolled in a coding bootcamp and completed the course within 4 months, and <mark>HERE I AM!</mark></p>
+                <br>
+
+                <div class="download-resume">
+                  <a href="pdf files/Shikirra Williams Resume.pdf" class="button" download="Shikirra Williams Resume.pdf">Download Resume</a>
+                  <i class="fa fa-download"></i>
+                </div>
+
+            </div>
+
+      </div>
+    </div>
+
+<!-- seperate into 3 columns for 1 section -->
+    <div id="skills" class="container-fluid">
+        <div class="row">
+          <h2>Skills</h2>
+
+          <div class="row">
+            <div class=".col-xs-6 .col-sm-4">
+              <ul>
+                <li>Git</li>
+                <li>Github</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Object-Oriented Design</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+
+            <div class=".col-xs-6 .col-sm-4">
+              <ul>
+                <li>Node.JS</li>
+                <li>MVC</li>
+                <li>Restful APIs</li>
+                <li>MongoDB</li>
+                <li>Postgresql</li>
+                <li>TDD</li>
+              </ul>
+            </div>
+
+            <div class=".col-xs-6 .col-sm-4">
+              <ul>
+                <li>Java</li>
+                <li>Spring</li>
+                <li>Maven</li>
+                <li>JUnit</li>
+                <li>Heroku</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
       </div>
 
-      <div class="contact-me">
+<!-- change background to violet color && add icons for this section -->
+      <div id="contact-me">
 
         <h2>Contact Me!</h2>
         <!-- want icons for linkedin github email and phone here -->
@@ -133,7 +190,7 @@
         </p>
       </div>
 
-      <div class="projects">
+      <div id="projects">
         <!-- want images of projects that take you to the direct link on github -->
         <dl class="">
           <dd>project1</dd>
@@ -142,9 +199,11 @@
         </dl>
       </div>
 
-    </div>
-
   </div>
+
+<!-- add contact icons in footer -->
+  <footer>
+  </footer>
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

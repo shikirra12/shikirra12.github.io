@@ -3,19 +3,22 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #fafafa;
 }
-.container-fluid {
+#navigation {
   background: #7386D5;
 }
 
-h1 {
+#nav-header-right {
   color: #fff;
 }
 
-h3 {}
 #sidebarCollapse {
   width: 40px;
   height: 40px;
   background: lightcoral;
+}
+
+.sidebar-header {
+  padding-left: 12px;
 }
 
 #sidebarCollapse span {
@@ -156,4 +159,38 @@ a[aria-expanded="true"]::before {
   #sidebarCollapse.active span:last-of-type {
     transform: rotate(-45deg) translate(1px, -1px);
   }
+}
+
+#home-pic {
+  width: 100vw;
+  margin-top: -27px;
+  /* height: 600px; */
+}
+
+#about-me {
+  background: lightcoral;
+}
+
+.img-circle {
+  padding-left: 35px;
+  padding-top: 20px;
+}
+
+.bio {
+  padding-left: 35px;
+}
+hr {
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 3px solid #eee;
+  margin-left: 15px;
+}
+
+.download-resume a {
+  background: #7386D5;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  position: relative;
 }
