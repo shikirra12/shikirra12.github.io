@@ -194,3 +194,19 @@ hr {
   border-radius: 5px;
   position: relative;
 }
+
+.download-resume a:hover, .download-resume a:active {
+  font-size: 150%
+}
+
+#skills {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#skills-list {
+  padding-left: 60px;
+  font-size: 18px;
+  width: 100%;
+  height: 200px;
+}

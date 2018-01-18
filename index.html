@@ -8,7 +8,7 @@
     <title>Shikirra's Portfolio</title>
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- <link href='custom.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
 
   </head>
@@ -123,13 +123,14 @@
     </div>
 
 <!-- seperate into 3 columns for 1 section -->
-    <div id="skills" class="container-fluid">
+    <div class="container-fluid">
         <div class="row">
-          <h2>Skills</h2>
+          <h1 id="skills">Skills</h1>
+        </div>
 
-          <div class="row">
-            <div class=".col-xs-6 .col-sm-4">
-              <ul>
+          <div id="skills-list" class="row">
+            <div class="col-xs-6 col-sm-4">
+              <ul style="list-style: none">
                 <li>Git</li>
                 <li>Github</li>
                 <li>HTML</li>
@@ -139,8 +140,8 @@
               </ul>
             </div>
 
-            <div class=".col-xs-6 .col-sm-4">
-              <ul>
+            <div class="col-xs-6 col-sm-4">
+              <ul style="list-style: none">
                 <li>Node.JS</li>
                 <li>MVC</li>
                 <li>Restful APIs</li>
@@ -150,8 +151,8 @@
               </ul>
             </div>
 
-            <div class=".col-xs-6 .col-sm-4">
-              <ul>
+            <div class="col-xs-6 col-sm-4">
+              <ul style="list-style: none">
                 <li>Java</li>
                 <li>Spring</li>
                 <li>Maven</li>
@@ -161,43 +162,53 @@
             </div>
 
           </div>
-        </div>
       </div>
 
 <!-- change background to violet color && add icons for this section -->
-      <div id="contact-me">
-
-        <h2>Contact Me!</h2>
-        <!-- want icons for linkedin github email and phone here -->
-          <div class="row">
-            <div class="twelve columns">
-              <ul class="social-links">
-                <li> <a href="https://www.linkedin.com/in/shikirrawilliams/"><i class="fa fa-linkedin"></i> </a>
-                </li>
-              </ul>
-            </div>
+  <div class="container-fluid">
+    <div id="contact-me">
+<!-- create business card look for this portion -->
+      <h2>Contact Me!</h2>
+      <!-- want icons for linkedin github email and phone here -->
+        <div class="row">
+          <div class="twelve columns">
+            <ul  style="list-style: none" class="social-link">
+              <li> <a href="https://www.linkedin.com/in/shikirrawilliams/"><i class="fa fa-linkedin"></i> shikirrawilliams </a>
+              </li>
+              <li> <a href="https://github.com/shikirra12"><i class="fa fa-github" aria-hidden="true"></i> shikirra12
+              </a>
+              </li>
+              <li> <a href="mailto:shikirra.williams@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> Email Me
+              </a>
+            </li><a href="tel:+16783156619"><i class="fa fa-mobile" aria-hidden="true"></i> Call Me</a>
+              <li>
+              </li>
+              <li><a href=""><i class="fa fa-location-arrow" aria-hidden="true"></i> Atlanta, GA</a>
+              </li>
+            </ul>
           </div>
-        <p class="social">
-          <a href="https://www.linkedin.com/in/shikirrawilliams/" class="linkedin"></a>
-          <i class="socicon-linkedin">
-            <span class="sr-only"></span>
-          </i>
-          <a href="https://github.com/shikirra12" class="github"></a>
-          <i class="socicon-github">
-            <span class="sr-only"></span>
-          </i>
-        <i class="glyphicon glyphicon-envelope"></i>
-        </p>
-      </div>
+        </div>
+    </div>
+  </div>
 
-      <div id="projects">
-        <!-- want images of projects that take you to the direct link on github -->
-        <dl class="">
-          <dd>project1</dd>
-          <dd>project2</dd>
-          <dd>project3</dd>
-        </dl>
-      </div>
+  <div class="container-fluid">
+    <div id="projects">
+
+      <!-- want images of projects that take you to the direct link on github -->
+      <!-- use scroll in from left transition -->
+      <dl class="">
+        <dd>Can I Get Ahh..?
+          <a href="https://github.com/canIgetUhh/CanIGetUhh"></a>
+        </dd>
+        <dd>Gabble
+          <a href="https://github.com/shikirra12/gabble"></a>
+        </dd>
+        <dd>Itunes Music Search
+          <a href="https://github.com/shikirra12/itunesMusicSearch"></a>
+        </dd>
+      </dl>
+    </div>
+  </div>
 
   </div>
 
