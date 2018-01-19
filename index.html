@@ -9,6 +9,7 @@
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
   </head>
@@ -44,16 +45,15 @@
                 <li class="active">
                   <a href="#projectSubmenu" data-toggle="collapse" aria-expanded="false" class="collapsed">Projects </a>
                     <ul class="list-unstyled collapse" id="projectSubmenu" aria-expanded="false">
-                      <li><a href="#">project1</a></li>
-                      <li><a href="#">project2</a></li>
-                      <li><a href="#">project3</a></li>
+                      <li><a href="https://github.com/canIgetUhh/CanIGetUhh">Can I Get Ahh..?</a></li>
+                      <li><a href="https://github.com/shikirra12/gabble">Gabble</a></li>
+                      <li><a href="https://github.com/shikirra12/itunesMusicSearch">Itunes Music Search</a></li>
                     </ul>
                   </li>
             </ul>
             <ul class="list-unstyled CTAs">
               <li>
-                <a href="pdf files/Shikirra Williams Resume.pdf" class="waves-effect waves-light btn" download="Shikirra Williams Resume.pdf">Download Resume</a>
-                <i class="fa fa-download"></i>
+                <a href="pdf files/Shikirra Williams Resume.pdf"  download="Shikirra Williams Resume.pdf"> Download Resume   <i class="fa fa-download"></i></a>
               </li>
             </ul>
       </nav>
@@ -79,16 +79,21 @@
     </div>
     </nav>
 
-    <div id="home">
-      <img id="home-pic" src="images/mac_and_coffee.jpg" alt="Lady with macbook and coffee">
+<!-- home -->
+    <div class="homebanner section no-pad-bot z-depth-1">
+      <div id="home" class="container-fluid">
+        <img id="home-pic" src="images/mac_and_coffee.jpg" alt="Lady with macbook and coffee">
 
-      <h2>
-        <a href="" class="typewrite" data-period="2000" data-type='[ "Desire to Learn", "Desire to Innovate", "Desire to Create", "Desire to Inspire", "Desire to Suceed" ]'>
-          <span class="wrap"></span>
-        </a>
-      </h2>
+        <h2>
+          <a href="" class="typewrite" data-period="2000" data-type='[ "Desire to Learn", "Desire to Innovate", "Desire to Create", "Desire to Inspire", "Desire to Suceed" ]'>
+            <span class="wrap"></span>
+          </a>
+        </h2>
+      </div>
+    </div>
 
 <!-- need to adjust about-me section to fit diffent medias && made photo transition on hover -->
+<!-- about-me -->
     <div id="about-me" class="container-fluid">
       <div class="row bio-container">
           <div class="col-xs-5 .col-sm-6 .col-md-4">
@@ -113,8 +118,8 @@
                 <br>
 
                 <div class="download-resume">
-                  <a href="pdf files/Shikirra Williams Resume.pdf" class="button" download="Shikirra Williams Resume.pdf">Download Resume</a>
-                  <i class="fa fa-download"></i>
+                  <i class="fa fa-download">
+                  <a href="pdf files/Shikirra Williams Resume.pdf" class="button" download="Shikirra Williams Resume.pdf">Download Resume</a></i>
                 </div>
 
             </div>
@@ -122,7 +127,7 @@
       </div>
     </div>
 
-<!-- seperate into 3 columns for 1 section -->
+<!-- skills -->
     <div class="container-fluid">
         <div class="row">
           <h1 id="skills">Skills</h1>
@@ -136,23 +141,23 @@
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Object-Oriented Design</li>
-                <li>JavaScript</li>
               </ul>
             </div>
 
             <div class="col-xs-6 col-sm-4">
               <ul style="list-style: none">
+                <li>JavaScript</li>
                 <li>Node.JS</li>
                 <li>MVC</li>
                 <li>Restful APIs</li>
                 <li>MongoDB</li>
                 <li>Postgresql</li>
-                <li>TDD</li>
               </ul>
             </div>
 
             <div class="col-xs-6 col-sm-4">
               <ul style="list-style: none">
+                <li>TDD</li>
                 <li>Java</li>
                 <li>Spring</li>
                 <li>Maven</li>
@@ -164,33 +169,38 @@
           </div>
       </div>
 
-<!-- change background to violet color && add icons for this section -->
-  <div class="container-fluid">
-    <div id="contact-me">
-<!-- create business card look for this portion -->
-      <h2>Contact Me!</h2>
-      <!-- want icons for linkedin github email and phone here -->
-        <div class="row">
-          <div class="twelve columns">
-            <ul  style="list-style: none" class="social-link">
-              <li> <a href="https://www.linkedin.com/in/shikirrawilliams/"><i class="fa fa-linkedin"></i> shikirrawilliams </a>
-              </li>
-              <li> <a href="https://github.com/shikirra12"><i class="fa fa-github" aria-hidden="true"></i> shikirra12
-              </a>
-              </li>
-              <li> <a href="mailto:shikirra.williams@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> Email Me
-              </a>
-            </li><a href="tel:+16783156619"><i class="fa fa-mobile" aria-hidden="true"></i> Call Me</a>
-              <li>
-              </li>
-              <li><a href=""><i class="fa fa-location-arrow" aria-hidden="true"></i> Atlanta, GA</a>
-              </li>
-            </ul>
-          </div>
+<!-- contact-me -->
+  <div id="contact-me" class="container-fluid">
+    <div class="container">
+      <div class="card">
+  <!-- create business card look for this portion -->
+
+        <div id="card-front" class="face front">
+          <h1> Shikirra </h1>
+          <h1>Williams</h1>
         </div>
+        <div class="face back">
+          <ul  style="list-style: none" class="social-link">
+            <li> <a href="https://www.linkedin.com/in/shikirrawilliams/"><i class="fa fa-linkedin fa-2x"></i> shikirrawilliams </a>
+            </li>
+            <li> <a href="https://github.com/shikirra12"><i class="fa fa-github fa-3x" aria-hidden="true"></i> shikirra12
+            </a>
+            </li>
+            <li> <a href="mailto:shikirra.williams@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i> Email Me
+            </a>
+          </li><a href="tel:+16783156619"><i class="fa fa-mobile fa-3x" aria-hidden="true"></i> Call Me</a>
+            <li>
+            </li>
+            <li><a href=""><i class="fa fa-location-arrow fa-2x" aria-hidden="true"></i> Atlanta, GA</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+
   </div>
 
+<!-- projects -->
   <div class="container-fluid">
     <div id="projects">
 
@@ -210,10 +220,13 @@
     </div>
   </div>
 
-  </div>
-
-<!-- add contact icons in footer -->
+<!-- add new york picture to footer and move with adjustment of page -->
+<!-- add contact icons in footer overlay over the photo -->
+<!-- make photo move with transition of the page -->
   <footer>
+    <div class="container-fluid">
+      <img id="footer-image" src="images/new_york.jpeg" alt="New York Skyline">
+    </div>
   </footer>
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
