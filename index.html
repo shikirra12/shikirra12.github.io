@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Shikirra's Portfolio</title>
-    <!-- Latest compiled and minified CSS -->
+
+<link rel="icon" href="http://moziru.com/images/lines-clipart-fire-14.png">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
@@ -178,6 +179,7 @@
         <div id="card-front" class="face front">
           <h1> Shikirra </h1>
           <h1>Williams</h1>
+          <h3>- Reach me Here</h3>
         </div>
         <div class="face back">
           <ul  style="list-style: none" class="social-link">
@@ -201,12 +203,14 @@
   </div>
 
 <!-- projects -->
-  <div class="container-fluid">
+  <!-- <div class="container-fluid">
     <div id="projects">
+      <img id="project-image" src="images/black-night-new-york-lights-bridge-wallpaper.jpg" alt="Brooklyn Bridge">
+    </div>  -->
 
       <!-- want images of projects that take you to the direct link on github -->
       <!-- use scroll in from left transition -->
-      <dl class="">
+      <!-- <dl class="">
         <dd>Can I Get Ahh..?
           <a href="https://github.com/canIgetUhh/CanIGetUhh"></a>
         </dd>
@@ -218,14 +222,28 @@
         </dd>
       </dl>
     </div>
-  </div>
+  </div> -->
 
-<!-- add new york picture to footer and move with adjustment of page -->
-<!-- add contact icons in footer overlay over the photo -->
-<!-- make photo move with transition of the page -->
   <footer>
-    <div class="container-fluid">
-      <img id="footer-image" src="images/new_york.jpeg" alt="New York Skyline">
+    <div class="top text-center">
+      <a class="smoothscroll" title="journey to top" href="#home"><i class="fa fa-chevron-up fa-2x"></i></a>
+    </div>
+    <div class="row">
+          <div class="col-xs-1"></div>
+            <div class="col-xs-10">
+              <ul   style="list-style: none" class="list-inline text-center">
+                <li> <a href="https://www.linkedin.com/in/shikirrawilliams/"><i class="fa fa-linkedin fa-2x"></i></a>
+                </li>
+                <li> <a href="https://github.com/shikirra12"><i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                </a>
+                </li>
+                <li> <a href="mailto:shikirra.williams@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+              </li><a href="tel:+16783156619"><i class="fa fa-mobile fa-3x" aria-hidden="true"></i></a>
+                <li>
+              </ul>
+            </div>
+          <div class="col-xs-1"></div>
     </div>
   </footer>
 
@@ -239,6 +257,24 @@
         });
     });
     </script>
+    <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          let hash = this.hash;
+
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 1200, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+  });
+</script>
     <script type="main.js"></script>
 
   </body>

@@ -175,6 +175,7 @@ a[aria-expanded="true"]::before {
 .img-circle {
   padding-left: 35px;
   padding-top: 20px;
+  /* border: 5px solid lightcoral; */
 }
 
 .bio {
@@ -263,6 +264,7 @@ hr {
 .card{
   transform-style: preserve-3d;
   transition: all 1.0s linear;
+  /* box-shadow: 5px 10px #888888; */
 }
 .card:hover .front{
   transform: rotateY(-180deg);
@@ -282,4 +284,17 @@ hr {
 
 .face.back {
   transform: rotateY(180deg);
+}
+
+#project-image {
+  width: 100vw;
+  max-height: 400px;
+}
+
+.row {
+  width: 100vw;
+}
+
+.list-inline.text-center li {
+  padding: 60px;
 }
