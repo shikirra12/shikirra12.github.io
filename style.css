@@ -165,7 +165,7 @@ a[aria-expanded="true"]::before {
 #home-pic {
   width: 1430px;
   margin-top: -27px;
-  max-height: 600px;
+  max-height: 700px;
 }
 
 #about-me {
@@ -222,10 +222,21 @@ hr {
   padding-bottom: 20px;
 }
 
+.container-fluid.contact-and-project {
+  width: 100vw;
+}
+
+.contact-and-project {
+  display: inline-flex;
+}
+
 .container {
   width: 400px;
   height: 280px;
   position: relative;
+  margin-left: initial;
+  margin-right: initial;
+  padding-left: 300px;
 }
 
 .card {
@@ -264,7 +275,6 @@ hr {
 .card{
   transform-style: preserve-3d;
   transition: all 1.0s linear;
-  /* box-shadow: 5px 10px #888888; */
 }
 .card:hover .front{
   transform: rotateY(-180deg);
@@ -286,15 +296,23 @@ hr {
   transform: rotateY(180deg);
 }
 
-#project-image {
-  width: 100vw;
-  max-height: 400px;
+#projects {
+  padding-left: 550px;
 }
 
 .row {
-  width: 100vw;
+  width: 100%;
+}
+
+.top a {
+  background-color: lightcoral;
+  padding: 10px;
 }
 
 .list-inline.text-center li {
   padding: 60px;
+}
+
+.projects-list {
+  font-size: 22px;
 }
