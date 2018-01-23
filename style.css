@@ -166,6 +166,7 @@ a[aria-expanded="true"]::before {
   width: 1430px;
   margin-top: -27px;
   max-height: 700px;
+  margin-left: -10px;
 }
 
 #about-me {
@@ -181,6 +182,27 @@ a[aria-expanded="true"]::before {
 .bio {
   padding-left: 35px;
 }
+
+#bio-pics {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#bio-pics img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#bio-pics img.bottom-picture:hover {
+  opacity:0;
+}
+
 hr {
   width: 50%;
   margin-top: 20px;
